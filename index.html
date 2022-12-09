@@ -5,6 +5,9 @@
   <meta charset="UTF-8">
   <title>Becoming a Developer Survey Form</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -19,17 +22,19 @@
       <label id="name-label" for="name">Name: </label>
       <input id="name" name="name" type="text" placeholder="Enter your Name" required>
     </div>
+
     <div class="form-group">
       <label id="email-label" for="email">Email: </label>
       <input type="email" name="email" id="email" placeholder="Enter your email" required>
     </div>
+
     <div class="form-group">
       <label id="number-label" for="age">Age: </label>
       <input type="number" name="age" id="number" min="10" max="60" placeholder="Enter your Age" required>
     </div>
 
     <div class="form-group">
-      <label for="dropdown">Gender</label>
+      <label for="dropdown">Gender:</label>
       <select name="dropdown" id="dropdown">
         <option value="">--Choose an option--</option>
         <option value="male">Male</option>
@@ -39,36 +44,53 @@
 
     <div class="form-group">
       <h2>What's your favorite language?</h2>
-      <input type="radio" name="favorite-language" id="fav-py" value="python">
-      <label for="favorite-language">Python</label>
 
-      <input type="radio" name="favorite-language" id="fav-js" value="js">
-      <label for="favorite-language">JavaScript</label>
+      <div class="sub-group">
+        <input type="radio" name="favorite-language" id="fav-py" value="python">
+        <label for="favorite-language">Python</label>
+      </div>
 
-      <input type="radio" name="favorite-language" id="fav-c++" value="c++">
-      <label for="favorite-language">C++</label>
+      <div class="sub-group">
+        <input type="radio" name="favorite-language" id="fav-js" value="js">
+        <label for="favorite-language">JavaScript</label>
+      </div>
+
+      <div class="sub-group">
+        <input type="radio" name="favorite-language" id="fav-c++" value="c++">
+        <label for="favorite-language">C++</label>
+      </div>
+
     </div>
 
     <div class="form-group">
       <h2>Why do you want to become a remote developer?</h2>
-      <input type="checkbox" name="developer-goals" id="" value="flexible-schedule">
-      <label for="developer-goals">Flexible schedule</label>
 
-      <input type="checkbox" name="developer-goals" id="" value="good-pay">
-      <label for="developer-goals">Good pay</label>
+      <div class="sub-group">
+        <input type="checkbox" name="developer-goals" id="" value="flexible-schedule">
+        <label for="developer-goals">Flexible schedule</label>
+      </div>
 
-      <input type="checkbox" name="developer-goals" id="" value="global-opportunities">
-      <label for="developer-goals">Global opportunities</label>
+      <div class="sub-group">
+        <input type="checkbox" name="developer-goals" id="" value="good-pay">
+        <label for="developer-goals">Good pay</label>
+      </div>
 
-      <input type="checkbox" name="developer-goals" id="meeting-people" value="meeting-people">
-      <label for="developer-goals">Meeting diversity of people</label>
+      <div class="sub-group">
+        <input type="checkbox" name="developer-goals" id="" value="global-opportunities">
+        <label for="developer-goals">Global opportunities</label>
+      </div>
+
+      <div class="sub-group">
+        <input type="checkbox" name="developer-goals" id="meeting-people" value="meeting-people">
+        <label for="developer-goals">Meeting diversity of people</label>
+      </div>
+
 
     </div>
 
     <div class="form-group">
       <h2>Additional Comment</h2>
-      <textarea>
-      </textarea>
+      <textarea name="" id="" cols="30" rows="10"></textarea>
     </div>
 
     <button id="submit">Submit</button>
